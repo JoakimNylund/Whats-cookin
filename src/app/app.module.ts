@@ -6,19 +6,22 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RecipesService } from './services/recipes.service';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent    
+    HeaderComponent       
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     FormsModule
   ],
-  providers: [],
+  providers: [RecipesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
