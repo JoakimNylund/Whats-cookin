@@ -1,25 +1,33 @@
-import { Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { RecipesService } from 'src/app/services/recipes.service';
+import { RecipeGlobal } from '../../shared/recipe-global';
+
 @Component({
   selector: 'app-recipesuggestions',
-  templateUrl: './recipesuggestions.component.html',
-  styleUrls: ['./recipesuggestions.component.scss']
+  template: `
+<ol *ngIf="recipes$ | async as recipes; else loading">
+<li *ngFor="let hits of recipes.hits">
+{{hits.recipe.label}}
+
+<img src="{{hits.recipe.image}}">
+</li>
+</ol>
+<ng-template #loading>Loading...</ng-template>
+`,
+  styleUrls: ['./recipesuggestions.component.scss'],
+
 })
-export class RecipesuggestionsComponent implements OnInit {
-  suggestedRecipes = [];
-  
-  constructor(private recipesService: RecipesService) {
-   }
+export class RecipesuggestionsComponent {
+  public readonly recipes$: Observable<RecipeGlobal>;
 
-  ngOnInit() {
-  // this.recipesService.getRecipes("bao").subscribe((data: R))
-    console.log(this.recipesService.getRecipes("bao"));
-    // // // // this.suggestedRecipes = this.recipesService.getRecipes("bao");
-  
+  constructor(private readonly recipesService: RecipesService) {
+    this.recipes$ = this.recipesService.suggestedRecipes$;
   }
-
- 
-
-
-
 }
+
+
+
+
+
+
