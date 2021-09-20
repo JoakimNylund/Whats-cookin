@@ -26,7 +26,7 @@
     "angular-bootstrap-md": "^4.3.7",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.5.0",
-    "bulma": "^0.9.3",
+    "bulma": "file:bulma",
     "chart.js": "^2.5.0",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.6.0",

@@ -8,16 +8,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RecipesService } from './services/recipes.service';
+import { HomemoduleModule } from './homemodule/homemodule.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent       
+    HeaderComponent           
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    HomemoduleModule,
     NgbModule,
     FormsModule
   ],

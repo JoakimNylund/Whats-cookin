@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { RecipesmoduleRoutingModule } from './recipesmodule-routing.module';
 import { RecipesmoduleComponent } from './recipesmodule.component';
 
@@ -11,10 +11,12 @@ import { RecipesmoduleComponent } from './recipesmodule.component';
   ],
   imports: [
     CommonModule,
-    RecipesmoduleRoutingModule
+    RecipesmoduleRoutingModule,
+    FormsModule
+
   ],
   exports: [
-   RecipesmoduleComponent
-    ]
+    RecipesmoduleComponent
+  ]
 })
 export class RecipesmoduleModule { }

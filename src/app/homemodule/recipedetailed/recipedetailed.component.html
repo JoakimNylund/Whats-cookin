@@ -1,0 +1,18 @@
+<div class="modal" [ngClass]="{ 'is-active' : isModalActive }">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">{{recipetitle}}</p>
+      <button class="delete" aria-label="close" (click)="toggleModal()"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+      <p></p> 
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save recipe</button>
+    </footer>
+  </div>
+</div>
+
+   
