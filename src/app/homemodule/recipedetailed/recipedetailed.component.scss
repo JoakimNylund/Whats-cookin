@@ -1,0 +1,36 @@
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #26a0da;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .button {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.button {          
+   transition: 0.5s;
+   background-size: 200% auto;
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ h2 {
+  font-size: 20px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(right, #314755 0%, #26a0da  51%, #314755  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-card-title {
+  font-size: 30px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(right, #314755 0%, #26a0da  51%, #314755  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 15em; /* the element needs a fixed width (in px, em, %, etc) */
+  overflow: hidden; /* make sure it hides the content that overflows */
+  white-space: nowrap; /* don't break the line */
+  text-overflow: ellipsis; /* give the beautiful '...' effect */
+}

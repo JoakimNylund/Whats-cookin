@@ -6,7 +6,10 @@ import { Ingredients } from '../../shared/ingredients';
   styleUrls: ['./recipedetailed.component.scss']
 })
 export class RecipedetailedComponent {
-  @Input() recipetitle = ''; // decorate the property with @Input()
+  @Input() recipetitle = '';
+  @Input() url = '';
+  @Input() source = '';
+  @Input() calories: number;
   @Input() ingredients : Ingredients[];
   isModalActive: boolean = true;
   constructor() { }
