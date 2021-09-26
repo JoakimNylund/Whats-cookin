@@ -8,8 +8,10 @@ import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
 @Component({
   selector: 'app-reciperesults',
   template: `
+  <app-recipeheader></app-recipeheader>
+<app-searchbar></app-searchbar>
   <div *ngIf="recipes$ | async as recipes; else loading">
-  <div class="serv">
+  <div class="rcontainer">
   <ul *ngFor="let hits of recipes.hits">
   <article class="tile is-child box">
   <div class="box">

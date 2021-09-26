@@ -24,6 +24,9 @@ import { HomemoduleModule } from './homemodule/homemodule.module';
     NgbModule,
     FormsModule
   ],
+  exports: [
+    HeaderComponent
+  ],
   providers: [RecipesService],
   bootstrap: [AppComponent]
 })

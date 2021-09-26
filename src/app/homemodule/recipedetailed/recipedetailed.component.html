@@ -7,13 +7,12 @@
     </header>
     <section class="modal-card-body">
       <!-- Content ... -->
-      <h2>Calories: {{calories}}</h2>
-      <br />
+      <h2>{{ingredients.length}} ingredients</h2>
       <div *ngFor="let ingredient of ingredients">
         <p><span class="dot"></span>       
         {{ingredient.text}}</p>
       </div>
-      <br />
+      <h2>Calories: {{calories}}</h2>
       <h2>Instructions</h2>
       <p>Instructions are provided at <a href="{{url}}">{{source}}</a>
       </p>

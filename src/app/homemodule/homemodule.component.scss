@@ -1,0 +1,21 @@
+.title {
+    font-size: 144px;
+    background: -webkit-linear-gradient(right, #314755 0%, #26a0da  51%, #314755  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.middle {
+    position: relative;
+margin-top: 100px;
+}
+
+.description {
+  text-align: center;
+  font-size: 32px;
+}
+
+.instruction {
+  text-align: center;
+  font-size: 22px;
+}

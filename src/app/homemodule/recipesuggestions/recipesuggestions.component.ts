@@ -5,7 +5,7 @@ import { RecipeGlobal } from '../../shared/recipe-global';
 
 @Component({
   selector: 'app-recipesuggestions',
-  template: ``,
+  templateUrl: `/recipesuggestions.component.html`,
   styleUrls: ['./recipesuggestions.component.scss'],
 
 })
@@ -15,7 +15,14 @@ export class RecipesuggestionsComponent {
   constructor(private readonly recipesService: RecipesService) {
    // this.recipes$ = this.recipesService.suggestedRecipes$;
   }
+  searchTerm: string = '';
+  blueberry: string = "blueberry"
+  pizza: string = "pizza"
+  setSearchTerm(searchTerm: string) {
+    this.recipesService.getRecipeResults(searchTerm);
+   }
 }
+
 
 
 

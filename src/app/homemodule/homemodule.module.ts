@@ -7,6 +7,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { RecipesuggestionsComponent } from './recipesuggestions/recipesuggestions.component';
 import { ReciperesultsComponent } from './reciperesults/reciperesults.component';
 import { RecipedetailedComponent } from './recipedetailed/recipedetailed.component';
+import { RecipeheaderComponent } from './recipeheader/recipeheader.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RecipedetailedComponent } from './recipedetailed/recipedetailed.compone
     SearchbarComponent,
     ReciperesultsComponent,
     RecipesuggestionsComponent,
-    RecipedetailedComponent
+    RecipedetailedComponent,
+    RecipeheaderComponent
   ],
   imports: [
     CommonModule,

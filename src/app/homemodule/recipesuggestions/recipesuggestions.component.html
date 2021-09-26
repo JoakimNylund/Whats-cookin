@@ -1,19 +1,57 @@
-<section class="section">
-  <div class="block">
-    <h2>Can't decide? Here are some recipes that we love.</h2>
+
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title"  routerLink="reciperesults" (click)="setSearchTerm(blueberry)">Berry of the week: Blueberry</p>
+            <p class="subtitle">Blueberries are your friends that you can not help but eat. 
+              </p>
+              <figure class="image is-4by3">
+            <img src="https://cdn.pixabay.com/photo/2016/03/09/09/19/blueberries-1245724__340.jpg">
+          </figure>
+          <br />
+          People have been eating blueberries for more than 13,000 years and for good reason.
+          It is low in calories but high in fibre, vitamin C and vitamin K. The silvery sheen (or “bloom”) 
+          found on the skin of blueberries is a naturally occurring compound that helps protect the fruit. That is why you should only wash 
+          blueberries just before you’re going to eat them. The berries should be stored in the refrigerator and will keep fresh for up to 10 days.
+          Check out our blueberry recipes 
+    <a routerLink="reciperesults" (click)="setSearchTerm(blueberry)">
+      here.
+    </a>
+        </article>
+  
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title"><a class="linker" href="https://www.seriouseats.com/traditional-beef-pho-recipe">Pho</a></p>
+          <p class="subtitle">The national dish of Vietnam.</p>
+          <figure class="image is-4by3">
+            <img src="https://i.pinimg.com/736x/64/ed/e5/64ede539ee0bb893428afd627b62ac0a.jpg">
+          </figure>
+          <br />
+          Need something to warm you? Let us recommend Pho. Eat it in a backstreet in Hanoi, in a trendy restaurant
+          in New York or why not in your kitchen?. The base is built on clear beef- or chicken-based broth, rice noodles, herbs, 
+          and thinly sliced meats — and is the favorite breakfast of the vietnamese people. Find our special favorite recipe 
+          <a href="https://www.seriouseats.com/traditional-beef-pho-recipe">here!</a>
+        </article>
+      </div>
+    </div>
   </div>
-  <div class="columns">
-    <div class="column">
-      Baooo
-    </div>
-    <div class="column">
-      Taco
-    </div>
-    <div class="column">
-      Swedish meatballs
-    </div>
-    <div class="column">
-      Dumplings
-    </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title" routerLink="reciperesults" (click)="setSearchTerm(pizza)">Homemade pizza</p>
+          <p class="subtitle">Because why not?</p>
+          <figure class="image is-4by3">
+            <img src="https://2.bp.blogspot.com/_d05rYeljquc/S1Ia68TSunI/AAAAAAAACIs/5fJwqtmDefo/s640/PIZZA.jpg">
+          </figure>
+          <br />
+    Everybody deserves to know how to make homemade pizza. It can sound like a lot of work, but it is worth the time. Our recipes do not
+    require you to have a big oven, it just requires some patience and love. Check out our pizza recipes 
+    <a routerLink="reciperesults" (click)="setSearchTerm(pizza)">
+      here.
+    </a>
+    
+    </article>
   </div>
-</section>
+</div>
