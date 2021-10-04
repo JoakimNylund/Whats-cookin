@@ -16,16 +16,22 @@
  }
 
  h2 {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
-  background: -webkit-linear-gradient(right, #314755 0%, #26a0da  51%, #314755  100%);
+  background: #314755;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.modal-card {
+  margin: auto;
+  text-align: center;
+}
+
 .modal-card-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
+  line-height: normal;
   background: -webkit-linear-gradient(right, #314755 0%, #26a0da  51%, #314755  100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -34,3 +40,8 @@
   white-space: nowrap; /* don't break the line */
   text-overflow: ellipsis; /* give the beautiful '...' effect */
 }
+
+#image {
+  border-image: linear-gradient(45deg, #314755 0%, #26a0da  51%, #314755  100%) 1;
+  margin: auto;
+ }

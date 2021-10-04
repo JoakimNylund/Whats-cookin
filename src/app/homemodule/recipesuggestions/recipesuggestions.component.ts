@@ -18,6 +18,7 @@ export class RecipesuggestionsComponent {
   searchTerm: string = '';
   blueberry: string = "blueberry"
   pizza: string = "pizza"
+  pasta: string = "pasta limon"
   setSearchTerm(searchTerm: string) {
     this.recipesService.getRecipeResults(searchTerm);
    }

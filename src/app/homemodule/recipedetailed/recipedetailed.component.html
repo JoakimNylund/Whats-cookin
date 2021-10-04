@@ -7,19 +7,18 @@
     </header>
     <section class="modal-card-body">
       <!-- Content ... -->
-      <h2>{{ingredients.length}} ingredients</h2>
+      <h2>{{ingredients.length}} ingredients | {{calories}} calories</h2>
       <div *ngFor="let ingredient of ingredients">
         <p><span class="dot"></span>       
         {{ingredient.text}}</p>
       </div>
-      <h2>Calories: {{calories}}</h2>
-      <h2>Instructions</h2>
-      <p>Instructions are provided at <a href="{{url}}">{{source}}</a>
+      <br />
+      <img src={{image}} id="image">
+      <br />
+      <h2> <a href="{{url}}">Instructions</a></h2>
+      <p>Detailed instructions are provided at <a href="{{url}}">{{source}}</a>, enjoy!
       </p>
     </section>
-    <footer class="modal-card-foot">
-      <button class="button is-info is-large">Save recipe</button>
-    </footer>
   </div>
 </div>
 

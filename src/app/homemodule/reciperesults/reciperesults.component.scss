@@ -8,6 +8,7 @@
   
 .title {
   font-size: 26px;
+  line-height: normal;
   width: 15em; /* the element needs a fixed width (in px, em, %, etc) */
   overflow: hidden; /* make sure it hides the content that overflows */
   white-space: nowrap; /* don't break the line */
@@ -41,7 +42,7 @@
 
  #image {
   border-style: solid;
-  border-width: 3px;
+  border-width: 1.5px;
   border-image: linear-gradient(45deg, #314755 0%, #26a0da  51%, #314755  100%) 1;
   margin: 20px;
  }

@@ -9,6 +9,7 @@ export class RecipedetailedComponent {
   @Input() recipetitle = '';
   @Input() url = '';
   @Input() source = '';
+  @Input() image = '';
   @Input() calories: number;
   @Input() ingredients : Ingredients[];
   isModalActive: boolean = true;
@@ -17,6 +18,7 @@ export class RecipedetailedComponent {
    toggleModal() {
     this.isModalActive = !this.isModalActive;
   }
+
 
 
 }

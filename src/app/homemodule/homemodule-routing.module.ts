@@ -8,10 +8,9 @@ import { RecipesuggestionsComponent } from './recipesuggestions/recipesuggestion
 const routes: Routes = [
   { path: '', component: HomemoduleComponent },
   { path: 'recipeshome', component: HomemoduleComponent },
-  { path: 'recipes', loadChildren: () => import('../recipesmodule/recipesmodule.module').then(m => m.RecipesmoduleModule) },
   { path: 'reciperesults', component: ReciperesultsComponent },
   { path: 'recipedetailed', component: RecipedetailedComponent },
-  { path: 'recipesuggestions', component: RecipesuggestionsComponent },
+  { path: 'recipesuggestions', component: RecipesuggestionsComponent }
 
 ];
 
