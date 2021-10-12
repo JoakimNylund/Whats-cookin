@@ -28,7 +28,8 @@ export class SearchbarComponent {
   constructor(private recipesService: RecipesService) { }
 
   setSearchTerm(searchTerm: string) {
-   this.recipesService.getRecipeResults(searchTerm);
+    this.recipesService.getRecipeResults(searchTerm);
+
   }
 
 }

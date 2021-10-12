@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { RecipesService } from 'src/app/services/recipes.service';
-import { RecipeGlobal } from '../../shared/recipe-global';
 
 @Component({
   selector: 'app-recipesuggestions',
@@ -10,10 +8,8 @@ import { RecipeGlobal } from '../../shared/recipe-global';
 
 })
 export class RecipesuggestionsComponent {
- // public readonly recipes$: Observable<RecipeGlobal>;
 
   constructor(private readonly recipesService: RecipesService) {
-   // this.recipes$ = this.recipesService.suggestedRecipes$;
   }
   searchTerm: string = '';
   blueberry: string = "blueberry"
@@ -21,7 +17,7 @@ export class RecipesuggestionsComponent {
   pasta: string = "pasta limon"
   setSearchTerm(searchTerm: string) {
     this.recipesService.getRecipeResults(searchTerm);
-   }
+  }
 }
 
 

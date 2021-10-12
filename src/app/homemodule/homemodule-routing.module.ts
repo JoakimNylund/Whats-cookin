@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: '', component: HomemoduleComponent },
   { path: 'recipeshome', component: HomemoduleComponent },
   { path: 'reciperesults', component: ReciperesultsComponent },
+  { path: 'first-component', component: ReciperesultsComponent },
   { path: 'recipedetailed', component: RecipedetailedComponent },
   { path: 'recipesuggestions', component: RecipesuggestionsComponent }
 
