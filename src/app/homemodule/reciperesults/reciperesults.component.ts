@@ -5,46 +5,10 @@ import { RecipeGlobal } from '../../shared/recipe-global';
 import { Ingredients } from '../../shared/ingredients';
 import { Router } from '@angular/router';
 @Component({
-  //Recipe results is responsible for displaying the results of the searchterm.
+  //Recipe results is responsible for displaying the results of the searchterm and sending
+  //detailed info to recipedetailed.
   selector: 'app-reciperesults',
-  template: `
-  <app-recipeheader></app-recipeheader>
-  <div class="box">
-  <form #userForm="ngForm">
-    <div class="field has-addons has-addons-centered">
-      <div class="control">
-        <input class="input is-large" type="text" #input placeholder="Search 2M+ recipes" [(ngModel)]="searchTerm" name="searchTerm">
-      </div>
-      <div class="control is-large">
-        <a class="button is-info is-large" (click)="setSearchTerm(searchTerm)">
-          Search
-        </a>
-      </div>
-      
-    </div>
-  </form>
-</div>
-//The code for loading the recipe and displaying them.
-  <div *ngIf="recipes$ | async as recipes; else loading">
-  <div class="rcontainer">
-  <ul *ngFor="let hits of recipes.hits">
-  <article class="tile is-child box">
-  <div class="box">
-  <p class="title">{{hits.recipe.label}}</p>
-  <a class="button is-info is-large" (click)="showDetailedRecipe(hits.recipe.label, hits.recipe.ingredients, 
-    hits.recipe.url, hits.recipe.source, hits.recipe.calories, hits.recipe.image)">Details</a>
-  <img src="{{hits.recipe.image}}" id="image">
-  </div>
-  </article>
-      </ul>
-      </div>
-  </div>
-  <ng-template #loading>Loading...</ng-template>
-  //Details about the recipe is sent to the class recipedetailed
-    <app-recipedetailed *ngIf="visible" [recipetitle]="this.recipetitle" [ingredients]="ingredients" 
-    [url]="this.recipeurl" [source]="this.recipesource" [calories]="this.calories" [image]="this.img">
-    </app-recipedetailed>
-`,
+  templateUrl: './reciperesults.component.html',
   styleUrls: ['./reciperesults.component.scss']
 })
 
